@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/buttonPrevious"
+        android:layout_width="0dip"
+        android:layout_height="60dp"
+        android:layout_weight="1.0"
+        android:contentDescription="@string/imagedesc"
+        android:onClick="onClick"
+        android:src="@drawable/navigation_previous_item" />
+
+    <com.imran.autoviewpager.AutoViewPager
+        android:id="@+id/adViewPager1"
+        android:layout_width="0dip"
+        android:layout_height="60dp"
+        android:layout_weight="8.0" >
+    </com.imran.autoviewpager.AutoViewPager>
+
+    <ImageButton
+        android:id="@+id/buttonNext"
+        android:layout_width="0dip"
+        android:layout_height="60dp"
+        android:layout_weight="1.0"
+        android:contentDescription="@string/imagedesc"
+        android:onClick="onClick"
+        android:src="@drawable/navigation_next_item" />
+
+</LinearLayout>
